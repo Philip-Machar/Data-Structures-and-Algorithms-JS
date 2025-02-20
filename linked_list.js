@@ -24,7 +24,7 @@ class LinkedList {
                 current = current.next;
             }
 
-            current.next = newNode
+            current.next = newNode;
         };
 
         this.size++;
