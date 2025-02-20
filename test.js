@@ -1,30 +1,20 @@
-const binary_search = (array, target) => {
-    let first = 0;
-    let last = array.length - 1;
-
-    while (first <= last) {
-        let midpoint = Math.floor((first + last) / 2);
-
-        if (array[midpoint] === target) {
-            return midpoint;
-        } else if (array[midpoint] < target) {
-            first = midpoint - 1;
-        } else if (array[midpoint] > target) {
-            last = midpoint - 1;
-        };
-    };
-
+const linear_search = (array, target) => {
+    for (let i = 0; i < array.length; i++){
+        if (array[i] === target) {
+            return i
+        }
+    }
     return null;
-};
+}
 
-const result = binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 7);
 
 const verify = (index) => {
     if (index !== null) {
-        console.log(`Target found at index: ${index}`);
+        console.log(`target found at index: ${index}`);
     } else {
-        console.log('Target was not found in the array');
-    };
+        console.log('target is not is in the array');
+    }
 };
 
-verify(result);
+
+verify(linear_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5));

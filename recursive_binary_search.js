@@ -14,6 +14,6 @@ const recursive_binary_search = (array, target, first = 0, last = array.length -
     };
 };
 
-console.log(recursive_binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 11));
+console.log(recursive_binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 7));
 
 
