@@ -5,12 +5,11 @@ class Node {
     };
 };
 
-
 class LinkedList {
     constructor() {
         this.head = null;
         this.size = 0;
-    };
+    }
 
     append(value) {
         const newNode = new Node(value);
@@ -25,12 +24,11 @@ class LinkedList {
             }
 
             current.next = newNode;
-        };
+        }
 
-        this.size++;
-    };
-};
-
+        this.size++
+    }
+}
 
 const list = new LinkedList();
 
@@ -39,4 +37,3 @@ list.append(20);
 list.append(30);
 
 console.log(list);
-
